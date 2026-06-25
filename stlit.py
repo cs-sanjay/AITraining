@@ -1,6 +1,6 @@
 import streamlit as st
 from google import genai as M
-robo = M.Client(api_key=st.secrets["MY_API"]
+robo = M.Client(api_key=st.secrets["MY_API"])
 mychat = robo.chats.create(model="gemini-flash-lite-latest")
 ##st.title("My AI")
 ##question = st.text_input("Ask Question")
